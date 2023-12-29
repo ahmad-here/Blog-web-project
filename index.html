@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Blog App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Your Blog App</h1>
+      </header>
+      <section id="blog-form">
+        <h2>Create a New Blog</h2>
+        <form>
+          <label>Title:</label>
+          <input type="text" name="title" required>
+          <br>
+          <label>Content:</label>
+          <textarea name="content" required></textarea>
+          <br>
+          <label>Category:</label>
+          <input type="text" name="category" required>
+          <br>
+          <button type="submit">Create Blog</button>
+        </form>
+      </section>
+      <section id="category-list">
+        <h2>Categories</h2>
+        <ul id="category-list-ul">
+          <!-- Category list will be dynamically populated -->
+          <!-- You can use JavaScript to fetch and update this list -->
+        </ul>
+      </section>
+      <section id="blog-list">
+        <h2>All Blogs</h2>
+        <ul>
+          <!-- Blog list will be dynamically populated -->
+          <!-- You can use JavaScript to fetch and update this list -->
+        </ul>
+      </section>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+  <script src="./categoryRoutes.js"></script>
+  <script src="./blogRoutes.js"></script>
+  <script src="./blog.js"></script>
+</html>
